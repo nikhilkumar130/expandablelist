@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/expandable_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="Amul Cheese..."
+                    android:textColor="#9b9b9b"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="11.000"
+                    android:textColor="#9b9b9b"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_column="3"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="11.00"
+                    android:textColor="#9b9b9b"
+                    android:textSize="12sp"
+                    app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/expandable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout">
+
+        <TableLayout
+            android:id="@+id/tableLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            tools:ignore="MissingConstraints">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="PLU No.
+Barcode"
+                    android:textColor="#9b9b9b"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="M.R.P"
+                    android:textColor="#9b9b9b"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Avail. Qty"
+                    android:textColor="#9b9b9b"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Adj. Qty."
+                    android:textColor="#9b9b9b"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Reason"
+                    android:textColor="#9b9b9b"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="PLU023
+654645546566"
+                    android:textColor="#9b9b9b"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="16.000"
+                    android:textColor="#9b9b9b"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="11.00"
+                    android:textColor="#9b9b9b"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:padding="10dp"
+                    android:text="11.00"
+                    android:textColor="#9b9b9b"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:padding="10dp"
+                    android:text="11.00"
+                    android:textColor="#9b9b9b"
+                    android:textSize="10dp" />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
